@@ -160,16 +160,21 @@ ul {
 .hero-form input:focus{
   outline: none;
 }
+.hero-header .card{
+  height: 400px;
+}
 /*about*/
 
 .about iframe{
   border-radius: 1.5em;
   box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   padding: .2em;
-  background-color:var(--secondary-color) ;
+  background-color:var(--primary-color) ;
 }
 .about{
   padding: 1.5em;
+  background-color: var(--secondary-color);
+  color: white;
 }
 .footer .social a {
   margin: 0 10px;
@@ -192,4 +197,69 @@ ul {
 }
 .about .container .about-info{
   align-self: flex-start;
+}
+.menu{
+  margin: 1em;
+  padding: 2em;
+}
+.menu .container{
+  width: 1100px;
+  overflow: visible;
+  padding: 1em;
+}
+.menu .container .grid .card{
+  width: 25em;
+  height: 20em;
+  transition: transform 0.2s ease-in;
+}
+.menu .container .grid{
+  grid-template-columns: repeat(3, 1fr);
+}
+.menu .container .grid .card img{
+  height: 90%;
+}
+.menu .container .grid .card:hover{
+  background-color: var(--secondary-color);
+  color: white;
+  transform: translateY(-15px);
+}
+
+.menu .container h1{
+  font-size: 5em;
+}
+
+@media(max-width: 768px){
+  .grid,
+  .hero-header .grid,
+  .about .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr ;
+  }
+  .about .grid {
+    margin: 1em;
+    padding: 5em;
+  }
+  .navbar{
+    z-index: 9999;
+    margin-bottom: 5em;
+    overflow: visible ;
+    }
+    .menu .container .grid{
+      grid-template-columns: 1fr;
+    }
+
+  }
+.menu .promociones .container .card{
+  height: 115px;
+}
+.menu .promociones .container .grid >*:first-child{
+  grid-column: 1/ span 3;
+  width: 1000px;
+}
+.menu .promociones .container .grid >*:nth-child(2){
+  grid-column: 1/ span 2;
+  width: 700px;
+}.menu .promociones .container .grid >*:nth-child(3){
+  grid-column: 1/ span 1;
+  width: 400px;
 }
