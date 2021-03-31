@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mr.Friesman</title>
+</head>
+
+<body>
+    <!--NavBar-->
+    <div class="navbar">
+        <div class="container flex">
+            <div class="flex">
+                <a href="/index.html" class="logo">
+                    <h1>Mr.<span>Fries</span></h1>
+                </a>
+                <img src="images/b&w logo.webp" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Ubicaciones</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Hero-->
+    <div class="hero-header hero-image">
+        <div class="container grid">
+            <div class="hero-text card">
+                <h1 class="titulo">Mr. Fries</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium veniam molestiae
+                    dolore esse, iste ipsam eos non facere corporis.
+                </p>
+            </div>
+            <div class="hero-form card">
+                <h2>Has tu pedido!</h2>
+                <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="direccion" placeholder="Direccion del pedido" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Correo Electronico" required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <section class="about">
+        <div class="container grid">
+            <div class="about-info card">
+                <h1>Ubicacion</h1>
+                <p>Carrera 3a con calle 7a pueblo nuevo, preguntar por el pana nico, bulda e pana, donde ladra mina ahi
+                    es</p>
+            </div>
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125710.51909882578!2d-69.43288923389996!3d10.061858985443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8766bc9c4998e1%3A0x9410c7a23558427f!2zMTDCsDAzJzEyLjYiTiA2OcKwMjInMDkuMiJX!5e0!3m2!1ses!2sve!4v1617206519860!5m2!1ses!2sve"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container grid">
+            <div class="grid">
+                <div class="text">
+                    <h1>
+                        Mr.Fries
+                    </h1>
+                    <p>Copyright &copy; 2020</p>
+                </div>
+                <div class="logo">
+                    <img src="images/b&w logo.webp" alt="">
+                </div>
+
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

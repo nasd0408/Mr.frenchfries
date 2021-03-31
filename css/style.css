@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #f0c929;
+    --secondary-color :#ac0d0d;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+body {
+    background: #fddca5;
+    font-family: 'Poppins';
+}
+img{
+  width: 100%;
+}
+.card{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  margin: 10px;
+  color: #333;
+}
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  transform: scale(0.98);
+  background-color:var(--secondary-color) ;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.grid-3{
+  grid-template-columns: repeat(3,1fr);
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+ .navbar {
+    background-color: var(--primary-color);
+    color: #2b331f;
+    height: 70px;
+  }
+  
+  .navbar ul {
+    display: flex;
+  }
+  
+  .navbar a {
+    color: black;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 2px var(--secondary-color) solid;
+    color: var(--secondary-color);
+  }
+  
+  .navbar .flex {
+    justify-content: space-between;
+  }
+  .navbar .container span{
+      color: var(--secondary-color);
+  }
+.navbar .container img{
+  width: 4em;
+  
+}
+
+/*Hero*/
+.hero-header{
+  height: 400px;
+  background-color: var(--primary-color);
+  color: black;
+  position: relative;
+}
+.hero-image {
+  background-image: url(../images/background.jpg); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.hero-header h1{
+  font-size: 6em;
+}
+.hero-header p{
+  margin: 20px 0;
+  font-size: 1em;
+}
+.hero-header .grid,
+.about .grid {
+  grid-template-columns: 55% 45%;
+  gap:1em;
+  overflow: visible;
+  align-content: center;
+  vertical-align: top;
+}
+
+.hero-form{
+  position: unset;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+.hero-header h2{
+  font-size: 2.5em;
+}
+.hero-form .form-control{
+  margin: 30px 0;}
+.hero-form input[type="text"],
+.hero-form input[type="email"] {
+    border: 0;
+    border-bottom: 1px #b4becb solid;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.hero-form input:focus{
+  outline: none;
+}
+/*about*/
+
+.about iframe{
+  border-radius: 1.5em;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  padding: .2em;
+  background-color:var(--secondary-color) ;
+}
+.about{
+  padding: 1.5em;
+}
+.footer .social a {
+  margin: 0 10px;
+}
+.footer{
+  background-color: var(--secondary-color);
+  color: white;
+}
+.footer .container nav ul li a,
+.footer .container .social i{
+  color: white;
+  margin: .8em;
+}
+.footer .container nav ul{
+  display: flex;
+
+}
+.footer .container .logo img{
+  width: 80px;
+}
