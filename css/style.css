@@ -190,3 +190,6 @@ ul {
 .footer .container .logo img{
   width: 80px;
 }
+.about .container .about-info{
+  align-self: flex-start;
+}
